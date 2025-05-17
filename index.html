@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biza Taxi - بطاقة عمل</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .card {
+      max-width: 450px;
+      background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+      transform: translateY(-30px);
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(0);
+    }
+    .header {
+      background: linear-gradient(135deg, #ffcc00 30%, #000000 70%);
+      padding: 30px;
+      text-align: center;
+      border-bottom: 4px solid #000;
+      border-radius: 20px 20px 0 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .header h1 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: white;
+    }
+    .image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 2px solid #ffcc00;
+    }
+    .content {
+      padding: 25px;
+      text-align: center;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    .info:hover {
+      transform: translateX(10px);
+    }
+    .info img {
+      width: 35px;
+      margin-right: 15px;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    }
+    .info span {
+      font-size: 22px;
+      font-weight: 500;
+      color: #ccc;
+    }
+    .routes {
+      background: #ffcc00;
+      color: #111;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      border-top: 3px solid #000;
+      border-radius: 0 0 20px 20px;
+    }
+    .buttons {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    .buttons a {
+      background: #000;
+      color: #ffcc00;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #333;
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      background: #212121;
+      border-radius: 0 0 20px 20px;
+    }
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    }
+    .footer {
+      background: #000;
+      color: #ffcc00;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      border-top: 2px solid #ffcc00;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h1>BIZA TAXI</h1>
+    </div>
+    <img src="car-image.jpg" alt="Taxi Image" class="image" />
+    <div class="content">
+      <div class="info">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="whatsapp" />
+        <span>0671 55 00 14</span>
+      </div>
+      <div class="info">
+        <img src="https://img.icons8.com/color/48/000000/phone--v1.png" alt="phone" />
+        <span>0555 11 66 34</span>
+      </div>
+      <div class="info">
+        <img src="https://img.icons8.com/color/48/000000/user.png" alt="user" />
+        <span>YOUNES BOUAROUA</span>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="tel:0555116634">📞 اتصل الآن</a>
+      <a href="https://wa.me/213671550014" target="_blank">💬 واتساب</a>
+      <a href="https://facebook.com" target="_blank">📘 فيسبوك</a>
+    </div>
+    <div class="routes">
+      GHARDAIA - MOASTAGHANEM - ORAN
+    </div>
+    <div class="gallery">
+      <img src="car1.jpg" alt="Car 1">
+      <img src="car2.jpg" alt="Car 2">
+      <img src="car3.jpg" alt="Car 3">
+    </div>
+    <div class="footer">
+      BIZA TAXI © 2025
+    </div>
+  </div>
+</body>
+</html>
